@@ -3,29 +3,16 @@ import java.util.Scanner;
 public class calCulator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        double num;
 
         System.out.println("Welcome to the Almighty calCulator.....");
+        System.out.println("------------------------------------------");
 
-        do {
-            System.out.print("Enter your first number: ");
-            while (!scanner.hasNextDouble()) {
-                System.out.print("Please enter a number: ");
-                scanner.next();        
-               }
-           num = scanner.nextDouble();
-        } while (num <= 0);
-
+        System.out.print("Enter your first number: ");
+        double num = scanner.nextDouble();
+        
         scanner.nextLine();
-        double num1;
-        do {
-            System.out.print("Enter your first number: ");
-            while (!scanner.hasNextDouble()) {
-                System.out.print("Please enter a number: ");
-                scanner.next();        
-               }
-           num1 = scanner.nextDouble();
-        } while (num1 <= 0);
+        System.out.print("Enter your second number: ");
+        double num1 = scanner.nextDouble();
 
         scanner.nextLine();
         System.out.print("Enter operation you want to perform: ");
